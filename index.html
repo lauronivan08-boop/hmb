@@ -308,7 +308,15 @@
                 heartsContainer.appendChild(heart);
             }
         }
+            <audio id="bgMusic" loop>
+            <source src="Audio/lany-soft.mp3" type="audio/mpeg">
+            </audio>
 
+        <button onclick="playMusic()">Play Music</button>
+        
+        function startMusic() {
+            document.getElementById("bgMusic").play();
+        }
         passwordBtn.addEventListener('click', () => {
             const value = passwordInput.value.trim();
             if (value === correctPassword) {
