@@ -309,17 +309,6 @@
             }
         }
 
-        function startMusic() {
-            const audio = document.createElement('audio');
-            audio.src = "Audio/lany-soft.mp3" type="audio/mpeg";
-            audio.type = "audio/mpeg";
-            audio.controls = true;
-            audio.autoplay = true;
-            audio.loop = true;
-            audio.play();
-            document.getElementById('audioContainer').appendChild(audio);
-        }
-
         passwordBtn.addEventListener('click', () => {
             const value = passwordInput.value.trim();
             if (value === correctPassword) {
